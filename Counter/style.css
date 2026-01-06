@@ -1,0 +1,32 @@
+body {
+    background: radial-gradient(rgb(67, 67, 67), rgb(44, 44, 44));
+}
+
+#countlabel {
+    font-size: 8em;
+    text-align: center;
+    display: block;
+    font-family: Georgia;
+    padding-top: 1.5em;
+}
+
+#Btncontainer {
+    text-align: center;
+}
+
+button {
+    font-size: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: whitesmoke;
+    padding: 12px 24px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    backdrop-filter: 0 4px 30px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+}
