@@ -11,6 +11,11 @@
             "src": "/public/Note.png",
             "sizes": "192x192",
             "type": "image/png"
+        },
+        {
+            "src": "/public/Note.png",
+            "sizes": "512x512",
+            "type": "image/png"
         }
     ]
 }
