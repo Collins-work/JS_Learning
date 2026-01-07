@@ -1,9 +1,10 @@
 {
-  "name": "js-practice",
+  "name": "calculator",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
+    "start": "electron .",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
@@ -17,5 +18,10 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.1.18",
     "tailwindcss": "^4.1.18"
-  }
+  },
+  "description": "",
+  "main": "main.js",
+  "keywords": [],
+  "author": "Clinex",
+  "license": "ISC"
 }
