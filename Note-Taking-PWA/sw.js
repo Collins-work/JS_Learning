@@ -1,4 +1,4 @@
-const CACHE_NAME = 'offline-notes-v2';
+const CACHE_NAME = 'offline-notes-v3';
 const STATIC_ASSETS = [
     './',
     './index.html',
@@ -6,7 +6,7 @@ const STATIC_ASSETS = [
     './src/app.js',
     './src/idb.js',
     './manifest.json',
-    './Note.png'
+    './public/Note.png'
 ];
 
 self.addEventListener('install', (event) => {
