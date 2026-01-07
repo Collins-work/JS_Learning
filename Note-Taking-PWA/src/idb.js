@@ -1,5 +1,6 @@
 // Minimal IndexedDB wrapper for a single 'notes' store
-export async function openDB(name = 'offline-notes', version = 1) {
+
+export async function openDB(name = 'ClinexNotes', version = 1) {
   return new Promise((resolve, reject) => {
     const req = indexedDB.open(name, version);
     req.onupgradeneeded = () => {
