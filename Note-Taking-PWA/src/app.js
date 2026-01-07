@@ -10,7 +10,7 @@ let deferredPrompt = null;
 
 // Service worker registration
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/public/sw.js', {
+  navigator.serviceWorker.register('/sw.js', {
     scope: '/'
   }).catch(console.error);
 }
