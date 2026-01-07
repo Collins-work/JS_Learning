@@ -9,7 +9,7 @@
     "description": "A cosmic, offline-first notes PWA for students to take long, short, and key notes.",
     "icons": [
         {
-            "src": "/public/Note.png",
+            "src": "/public/Note_resized.png",
             "sizes": "192x192 512x512",
             "type": "image/png"
         }
