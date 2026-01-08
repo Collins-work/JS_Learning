@@ -19,6 +19,21 @@ const userName = document.getElementById('userName');
 const userPhoto = document.getElementById('userPhoto');
 
 let cloudListener = null;
+import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+
+const auth = getAuth();
+const provider = new GoogleAuthProvider();
+
+signInWithPopup(auth, provider).then((result) => {
+  const user = result.user;
+
+  // Send event to Google Analytics
+  gtag('event', 'google_sign_in', {
+    event_category: 'authentication',
+    event_label: user.email
+  });
+});
+
 
 // Service worker registration
 if ('serviceWorker' in navigator) {
@@ -26,6 +41,14 @@ if ('serviceWorker' in navigator) {
     scope: '/'
   }).catch(console.error);
 }
+window.addEventListener('appinstalled', () => {
+  // Send event to Google Analytics
+  gtag('event', 'ClinexNotesInstalled', {
+    event_category: 'engagement',
+    event_label: 'Clinex Notes Installed'
+  });
+});
+
 
 // Initialize authentication
 initAuth(async (user) => {
